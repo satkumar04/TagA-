@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.san.tgps.HistoryFragment">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_vehicleinfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:background="@drawable/whitelayout_bgborderskyblu"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtvehiclename"
+            style="@style/marqueestyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".5"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center|left" />
+
+        <TextView
+            android:id="@+id/txtdatetime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".06"
+        android:background="@drawable/whitelayout_bgborderskyblu">
+
+        <RadioGroup
+            android:id="@+id/rb_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".82"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/rb_today"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".31"
+                android:checked="true"
+                android:gravity="left|center"
+                android:text="Today"
+                android:buttonTint="#e71f1f"/>
+
+            <RadioButton
+                android:id="@+id/rb_yestrday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".36"
+                android:gravity="left|center"
+                android:text="Yesterday"
+                android:buttonTint="#e71f1f"/>
+
+            <RadioButton
+                android:id="@+id/rb_custom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="left|center"
+                android:text="Custom"
+                android:buttonTint="#e71f1f"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".18"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/btnhistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/verydark"
+                android:drawableLeft="@drawable/play"
+                android:text="@string/play"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_livemap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85">
+
+        <fragment
+            android:id="@+id/historymap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+     <!--   <com.google.android.gms.maps.MapView
+            android:id="@+id/historymap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".04">
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/maxhours"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="10sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

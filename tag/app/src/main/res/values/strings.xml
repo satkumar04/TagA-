@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TAG</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="navigation_view_item_1">VIHICLE STATUS</string>
+    <string name="navigation_view_item_2">DASHBOARD</string>
+    <string name="navigation_view_item_3">TRAVEL SUMMARY</string>
+    <string name="navigation_view_item_4">Kms SUMMARY</string>
+    <string name="navigation_view_item_5">PRIVACY POLICY</string>
+    <string name="navigation_view_item_6">PRIVACY POLICY</string>
+    <string name="navigation_view_category_1">Navigation View Category</string>
+    <string name="navigation_view_category_2">Navigation View Category</string>
+
+    <string name="local_service_started">local service started</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="moving">Moving</string>
+    <string name="showpswd">Show Password</string>
+    <string name="rememberme">Remember me</string>
+    <string name="clear">Clear</string>
+    <string name="back">BACK</string>
+    <string name="map">POSITION</string>
+    <string name="settings">SETTINGS</string>
+    <string name="history">HISTORY</string>
+    <string name="livetrack">LIVE</string>
+    <string name="date">DATE</string>
+    <string name="vehicle">VEHICLE :</string>
+    <string name="speed">SPEED :</string>
+    <string name="message">MESSAGE</string>
+    <string name="action">ACTION</string>
+    <string name="clear1">CLEAR</string>
+    <string name="clearall">CLEAR ALL</string>
+    <string name="ok">OK</string>
+    <string name="login">LOGIN</string>
+    <string name="username">User name here</string>
+    <string name="password">Password here</string>
+    <string name="play">PLAY</string>
+    <string name="stop">STOP</string>
+    <string name="datetime">DATE</string>
+    <string name="maxhours">Custom option will show Maximum 2 hours history only.</string>
+    <string name="alarms">ALARMS SETTING</string>
+    <string name="sosalarm">SOS ALARM</string>
+    <string name="overspeed">OVER SPEED ALARM</string>
+    <string name="accalarm">ACC ALARM</string>
+    <string name="lowbattery">LOW BATTERY ALARM</string>
+    <string name="powercutoff">POWER CUTOFF ALARM</string>
+    <string name="geofence">GEOFENCE ALARM</string>
+    <string name="save">SAVE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.san.tgps.OnlineVehiclesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Swipe down to Refresh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/darkgray">
+
+        <EditText
+            android:id="@+id/et_searchvehicle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edttxt_bg"
+            android:cursorVisible="false"
+            android:drawableLeft="@drawable/search"
+            android:gravity="center"
+            android:hint="Search vehicle here"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sr_onlinevehicles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".79">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_onlinevehicles"
+            android:layout_width="match_parent"
+            android:background="#f9fdf9"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/darkgreen" />
+
+    <LinearLayout
+        android:id="@+id/ll_note"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight=".055"
+        android:orientation="horizontal"
+        android:weightSum="1">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight=".07"/>
+        <LinearLayout
+            android:id="@+id/ll_offline"
+            style="@style/ll_allonoff">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3">
+
+                <ImageView
+                    android:id="@+id/imfoffline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/reddrive" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtoffline"
+                style="@style/txtimgnotenormal"
+                android:text="Offline"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_online"
+            style="@style/ll_allonoff">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3">
+
+                <ImageView
+                    android:id="@+id/imgonline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/greendrive" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtonline"
+                style="@style/txtimgnotenormal"
+                android:text="Online"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_moving"
+            style="@style/ll_allonoff">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3">
+
+                <ImageView
+                    android:id="@+id/imginmove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/greydrive" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/VehicleDetTV"
+                style="@style/txtimgnotenormal"
+                android:text="@string/moving"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

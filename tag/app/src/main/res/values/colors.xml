@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="ColorPrimary">#FF5722</color>
+    <color name="ColorPrimaryDark">#E64A19</color>
+    <color name="gray">#BEBEBE</color>
+    <color name="blue">#0000FF</color>
+    <color name="seagreen">#2E8B57</color>
+    <color name="lightslategray">#778899</color>
+    <color name="navy">#000080</color>
+    <color name="cornflowerblue">#6495ed</color>
+    <color name="lightslateblue">#8470FF</color>
+    <color name="drkseagreen">#8FBC8F</color>
+    <color name="darkorange">#FF8C00</color>
+    <color name="darkgrayishcyan">#d3d3d3</color>
+    <color name="white">#ffffff</color>
+
+    <color name="BARcolor">#205C55</color>
+    <color name="NewBARcolor">#EF7F1A</color>
+    <color name="darkgray">#5c5855</color>
+    <color name="darkpeechgreen">#205C55</color>
+    <color name="skylghtblue">#87CEFA</color>
+    <color name="lightgreen">#32cd32</color>
+    <color name="olivegreen">#556b2f</color>
+    <color name="darkgreen">#006400</color>
+    <color name="muddy">#c09372</color>
+    <color name="black">#000000</color>
+    <color name="verydark">#1c2640</color>
+    <color name="strogred">#d72a27</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="logout">#269174</color>
+    <color name="peechgreen">#43c9a5</color>
+    <color name="yellow">#fff9aa</color>
+</resources>

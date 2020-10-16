@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.san.tgps.VehicleTrackMain">
+
+    <LinearLayout
+        android:id="@+id/frgmntgroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight=".9"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/ll_btnsvideoGps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@drawable/whitelayout_bgborderskyblu"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_livetrack"
+            style="@style/ll_bottomlocact600dp"
+            android:background="@color/NewBARcolor"
+            android:onClick="vidobtnpressed"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgmap"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight=".65"
+                android:src="@drawable/live" />
+
+            <TextView
+                android:id="@+id/txtlivetrack"
+                style="@style/txtbtns"
+                android:text="@string/livetrack"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_current"
+            style="@style/ll_bottomlocact600dp"
+            android:background="@color/white"
+            android:onClick="gpsbtnpressed"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgvideolive"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight=".65"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                style="@style/txtbtns"
+                android:text="@string/map"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_history"
+            style="@style/ll_bottomlocact600dp"
+            android:background="@color/white"
+            android:onClick="gpsbtnpressed"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imghistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".65"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:id="@+id/txthistory"
+                style="@style/txtbtns"
+                android:text="@string/history"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            style="@style/ll_bottomlocact600dp"
+            android:background="@color/white"
+            android:onClick="snapbtnpressed"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgsnap"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".65"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/txtback"
+                style="@style/txtbtns"
+                android:text="@string/back"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

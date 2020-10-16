@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.san.tgps.CurrentFragment">
+    <LinearLayout
+        android:id="@+id/ll_vehicleinfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:background="@drawable/whitelayout_bgborderskyblu"
+        android:orientation="horizontal"
+        android:weightSum="0">
+
+        <TextView
+            android:id="@+id/txtveh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="@string/vehicle"
+            style="@style/marqueestyle" />
+
+        <TextView
+            android:id="@+id/txtvehiclename"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:layout_marginLeft="3dp"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            style="@style/marqueestyle"/>
+
+        <TextView
+            android:id="@+id/txtspd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:id="@+id/txtspeedcnt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text=""
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_livemap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85">
+
+        <!--<fragment
+            android:id="@+id/currentmap"
+            class="com.google.android.gms.maps.MapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/currentmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Address"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

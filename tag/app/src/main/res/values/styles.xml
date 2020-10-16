@@ -1,0 +1,168 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.WithoutActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="btncorners10dp">
+        <item name="android:bottomRightRadius">10dp</item>
+        <item name="android:topLeftRadius">10dp</item>
+        <item name="android:topRightRadius">10dp</item>
+        <item name="android:bottomLeftRadius">10dp</item>
+    </style>
+
+    <style name="llbtnsinlocation">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="btnslvtrhmdvc600dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:textSize">28sp</item>
+
+    </style>
+
+    <style name="btnslvtrhmdvc720dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:textSize">35sp</item>
+
+    </style>
+
+    <style name="btnslvtrhmdvc480dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="ll_allonoff">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.3</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <style name="imgtxtnote480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.35</item>
+
+    </style>
+
+    <style name="txtimgnote480">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.7</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="txtimgnote600dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.6</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="txtimgnotenormal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="txtimgnote720dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.7</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">35sp</item>
+
+    </style>
+
+    <style name="txtbtns">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">.35</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="txtnotificationssmall">
+        <item name="android:textSize">@dimen/eighten</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">.28</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="txtnotificationnormal">
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">.28</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="ll_bottomlocact600dp">
+        <item name="android:layout_weight">.25</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="marqueestyle">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="Navigationbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#995544</item>
+    </style>
+</resources>
