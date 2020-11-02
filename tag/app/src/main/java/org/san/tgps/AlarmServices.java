@@ -70,6 +70,7 @@ import static android.os.SystemClock.sleep;
 
 public class AlarmServices extends Service {
 
+    int notificationId=3221;
     Intent intent;
     private String TAG = AlarmServices.class.getSimpleName();
     public static final String BROADCAST_ACTION = "Hello World";
@@ -143,15 +144,23 @@ public class AlarmServices extends Service {
         Notification notification = notificationBuilder.setOngoing(true)
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setContentTitle("App is running in background")
-                .setPriority(NotificationManager.IMPORTANCE_MIN)
+                .setPriority(NotificationManager.IMPORTANCE_NONE)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
-        startForeground(2, notification);
+        startForeground(notificationId, notification);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                NotificationManager nMgr = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+                nMgr.cancel(notificationId);
+            }
+        }, 2000);
+
     }
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        //  super.onStartCommand(intent, flags, startId);
-        onTaskRemoved(intent);
+          super.onStartCommand(intent, flags, startId);
+      //  onTaskRemoved(intent);
          //  Toast.makeText(this, "Service is running 123", Toast.LENGTH_SHORT).show();
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -204,6 +213,8 @@ public class AlarmServices extends Service {
         intent.putExtra("yourvalue", "torestore");
         sendBroadcast(broadcastIntent);*/
         super.onDestroy();
+        NotificationManager nMgr = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        nMgr.cancel(notificationId);
         // mTimer.cancel();    //For Cancel Timer
 
        // Toast.makeText(this, "Service is Destroyed", Toast.LENGTH_SHORT).show();
@@ -261,6 +272,8 @@ public class AlarmServices extends Service {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
+            NotificationManager nMgr = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+            nMgr.cancel(notificationId);
             // Toast.makeText(context, ""+newalarmimei, Toast.LENGTH_LONG).show();
             if (Alarmtype == null) {
 
@@ -303,6 +316,7 @@ public class AlarmServices extends Service {
                 }
 
             }
+            stopSelf();
         }
 
 
@@ -381,7 +395,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(100, builder.build());
     }
 
     public void addOverspeedNotification() {
@@ -404,7 +418,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(101, builder.build());
     }
     public void addAccOffNotification() {
         NotificationCompat.Builder builder =
@@ -426,7 +440,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(102, builder.build());
     }
     public void addAccOnNotification() {
         NotificationCompat.Builder builder =
@@ -451,7 +465,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(103, builder.build());
     }
     public void addLowBatteryNotification() {
         NotificationCompat.Builder builder =
@@ -473,7 +487,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(104, builder.build());
     }
     public void addpowerCutNotification() {
         NotificationCompat.Builder builder =
@@ -496,7 +510,7 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(105, builder.build());
     }
     public void addGeofenceNotification() {
         NotificationCompat.Builder builder =
@@ -517,6 +531,6 @@ public class AlarmServices extends Service {
         builder.setContentIntent(contentIntent);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(1, builder.build());
+        manager.notify(106, builder.build());
     }
 }

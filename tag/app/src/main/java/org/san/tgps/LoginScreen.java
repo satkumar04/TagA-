@@ -665,6 +665,8 @@ public class LoginScreen extends AppCompatActivity {
 
             @Override
             protected String doInBackground(Void... params) {
+                startService(new Intent(LoginScreen.this, AlarmServices.class));
+
                 Log.v("AsyncTask", "doInBackground");
                 HttpHandler sh = new HttpHandler();
                 String url = GlobalVariables.apiserverUrl+"PassWord?UserName="+username;
@@ -840,7 +842,6 @@ public class LoginScreen extends AppCompatActivity {
             protected void onPostExecute(String msg) {
                 Log.v("AsyncTask", "onPostExecute");
                 super.onPostExecute(msg);
-
                // new GetDBAlarmsts().execute();
                 executeDBAlarmstsTask();
                 //new GetVehicleCount().execute();

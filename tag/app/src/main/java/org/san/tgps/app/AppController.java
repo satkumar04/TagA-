@@ -33,7 +33,7 @@ public class AppController extends Application {
         } else {
             startService(new Intent(this, AlarmServices.class));
         }*/
-        startService(new Intent(this, AlarmServices.class));
+
         mInstance = this;
     }
 
